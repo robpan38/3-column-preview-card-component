@@ -1,0 +1,25 @@
+.card.sedan {
+    background-color: var(--orange-background);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.card.suv {
+    background-color: var(--light-cyan-background);
+}
+
+.card.luxury {
+    background-color: var(--dark-cyan-background);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.card.sedan button {
+    color: var(--orange-background);
+}
+
+.card.suv button {
+    color: var(--light-cyan-background);
+}
+
+.card.luxury button {
+    color: var(--dark-cyan-background);
+}

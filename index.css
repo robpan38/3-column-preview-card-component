@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card-width: 20%;
+    --card-height: 60%;
+    --white-background: hsla(0, 0%, 100%, 0.75);
+    --orange-background: hsl(31, 77%, 52%);
+    --light-cyan-background: hsl(184, 100%, 22%);
+    --dark-cyan-background: hsl(179, 100%, 13%);
+    --gray-background: hsl(0, 0%, 95%);
+    --lexend-font: 'Lexend Deca'; /* fallback: sans-serif */
+    --big-shoulders-font: 'Big Shoulders Display'; /* fallback: cursive */
+    --left-margin-value: 15%;
+    --right-margin-value: 15%;
+    --top-margin-value: 10%;
+    --img-width: 64px;
+    --img-height: 40px;
+    font-size: 15px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--gray-background);
+}
+
+.cards {
+    height: 98%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: var(--card-height);
+    width: var(--card-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 400px;
+}
+
+.card .description {
+    color: var(--white-background);
+    font-family: var(--lexend-font, sans-serif);
+    margin-left: var(--left-margin-value);
+    margin-right: var(--right-margin-value);
+    margin-top: var(--top-margin-value);
+    font-size: 1rem;
+    max-height: 20%;
+}
+
+.card .headline {
+    color: var(--gray-background);
+    font-family: var(--big-shoulders-font, 'cursive');
+    margin-left: var(--left-margin-value);
+    margin-right: var(--right-margin-value);
+    margin-top: var(--top-margin-value);
+    font-size: 2rem;
+}
+
+.card button {
+    background-color: var(--gray-background);
+    border: 0px;
+    font-family: var(--lexend-font, sans-serif);
+    position: relative;
+    top: 20%;
+    padding: 5%;
+    margin-left: var(--left-margin-value);
+    margin-right: 40%;
+    border-radius: 25px;
+}
+
+img {
+    height: var(--img-height);
+    width: var(--img-width);
+    margin-left: var(--left-margin-value);
+    margin-top: var(--top-margin-value);
+}
