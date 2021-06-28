@@ -5,7 +5,7 @@
 }
 
 :root {
-    --card-width: 20%;
+    --card-width: 35%;
     --card-height: 60%;
     --white-background: hsla(0, 0%, 100%, 0.75);
     --orange-background: hsl(31, 77%, 52%);
@@ -29,7 +29,7 @@ body {
 }
 
 .cards {
-    height: 98%;
+    height: 97%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -69,7 +69,7 @@ body {
 
 .card button {
     background-color: var(--gray-background);
-    border: 0px;
+    border: 1px solid;
     font-family: var(--lexend-font, sans-serif);
     position: relative;
     top: 75px;
@@ -77,6 +77,24 @@ body {
     margin-left: var(--left-margin-value);
     margin-right: 40%;
     border-radius: 25px;
+}
+
+.card.sedan button:hover {
+    background-color: var(--orange-background);
+    color: var(--gray-background);
+    border-color: var(--gray-background);
+}
+
+.card.suv button:hover {
+    background-color: var(--light-cyan-background);
+    color: var(--gray-background);
+    border-color: var(--gray-background);
+}
+
+.card.luxury button:hover {
+    background-color: var(--dark-cyan-background);
+    color: var(--gray-background);
+    border-color: var(--gray-background);
 }
 
 img {
