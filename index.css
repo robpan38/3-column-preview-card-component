@@ -42,7 +42,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    min-height: 368px;
     max-height: 400px;
+    min-width: 220px;
+    max-width: 260px;
 }
 
 .card .description {
@@ -69,7 +72,7 @@ body {
     border: 0px;
     font-family: var(--lexend-font, sans-serif);
     position: relative;
-    top: 20%;
+    top: 75px;
     padding: 5%;
     margin-left: var(--left-margin-value);
     margin-right: 40%;
