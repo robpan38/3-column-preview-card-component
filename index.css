@@ -79,6 +79,20 @@ body {
     border-radius: 25px;
 }
 
+.card.sedan {
+    background-color: var(--orange-background);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.card.suv {
+    background-color: var(--light-cyan-background);
+}
+
+.card.luxury {
+    background-color: var(--dark-cyan-background);
+    border-radius: 0px 5px 5px 0px;
+}
+
 .card.sedan button:hover {
     background-color: var(--orange-background);
     color: var(--gray-background);
@@ -102,4 +116,25 @@ img {
     width: var(--img-width);
     margin-left: var(--left-margin-value);
     margin-top: var(--top-margin-value);
+}
+
+@media screen and (max-width: 790px) {
+    .cards {
+        min-height: calc(368px * 3.5);
+        flex-direction: column;
+    }
+
+    .card {
+        height: 20%;
+    }
+
+    .card.sedan {
+        border-radius: 5px 5px 0px 0px;
+    }
+    .card.suv {
+        border-radius: 0;
+    }
+    .card.luxury {
+        border-radius: 0px 0px 5px 5px;
+    }
 }
